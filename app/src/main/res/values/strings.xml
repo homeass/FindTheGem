@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Find the Gem</string>
+    <string name="app_tagline">Research Platform</string>
+    
+    <!-- Main Activity -->
+    <string name="loading_text">Loading Find the Gem…</string>
+    <string name="loading_progress">%d%%</string>
+    <string name="loading_complete">Ready!</string>
+    <string name="loading_title">Loading…</string>
+    <string name="error_loading_page">Failed to load page</string>
+    <string name="retry_button">Retry</string>
+    <string name="exit_confirm_title">Exit App?</string>
+    <string name="exit_confirm_message">Are you sure you want to exit Find the Gem?</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No</string>
+    
+    <!-- Menu -->
+    <string name="action_home">Home</string>
+    <string name="action_back">Back</string>
+    <string name="action_forward">Forward</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Settings Activity -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Configure the Find the Gem server connection</string>
+    <string name="server_url_hint">Server URL (e.g., http://127.0.0.1:8501)</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="testing_connection">Testing…</string>
+    <string name="save_button">Save</string>
+    <string name="reset_to_default">Reset to Default</string>
+    <string name="current_url_label">Current URL:</string>
+    <string name="url_saved_success">Server URL saved successfully</string>
+    <string name="url_reset_success">Reset to default URL</string>
+    <string name="connection_success">Connection successful!</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="url_required_error">Please enter a server URL</string>
+    <string name="invalid_url_error">Please enter a valid URL (http:// or https://)</string>
+    
+    <!-- Error icon -->
+    <string name="error_icon_desc">Error icon</string>
+    
+    <!-- Termux Setup -->
+    <string name="setup_checking_termux">Checking Termux installation…</string>
+    <string name="setup_copying_files">Copying files to device…</string>
+    <string name="setup_starting_server">Starting local server…</string>
+    <string name="setup_waiting_server">Waiting for server to be ready…</string>
+    <string name="setup_complete">Setup complete!</string>
+    <string name="setup_error_termux_not_found">Termux is not installed.\n\nPlease install Termux from F-Droid or GitHub Releases.</string>
+    <string name="setup_error_server_failed">Failed to start the local server.\n\nPlease open Termux and run:\n cd ~/findthegem &amp;&amp; bash start_server.sh</string>
+    <string name="setup_error_files_failed">Failed to copy files to device storage.</string>
+    <string name="setup_retry">Retry Setup</string>
+    <string name="setup_open_termux">Open Termux</string>
+    <string name="setup_install_termux">Install Termux</string>
+    <string name="setup_bootstrap_instruction">First-time setup required.\n\n1. Termux is now open\n2. Long-press and PASTE the command below\n3. Press Enter\n4. Come back and tap Retry\n\nCommand:</string>
+
+</resources>

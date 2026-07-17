@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Matching Streamlit App Gradient -->
+    <color name="colorPrimary">#667eea</color>
+    <color name="colorPrimaryDark">#5a6fd6</color>
+    <color name="colorPrimaryLight">#8a94f0</color>
+    <color name="colorSecondary">#764ba2</color>
+    <color name="colorSecondaryDark">#5e3a85</color>
+    <color name="colorAccent">#764ba2</color>
+    
+    <!-- Gradient Colors for Splash/Loading -->
+    <color name="splash_bg_start">#667eea</color>
+    <color name="splash_bg_end">#764ba2</color>
+    
+    <!-- Standard Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Alpha variants -->
+    <color name="white_alpha_80">#CCFFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="black_alpha_60">#99000000</color>
+    <color name="black_alpha_80">#CC000000</color>
+    
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+    
+    <!-- Background Colors -->
+    <color name="backgroundLight">#FAFAFA</color>
+    <color name="backgroundDark">#121212</color>
+    <color name="surfaceLight">#FFFFFF</color>
+    <color name="surfaceDark">#1E1E1E</color>
+    
+    <!-- Status Colors -->
+    <color name="errorColor">#D32F2F</color>
+    <color name="successColor">#388E3C</color>
+    <color name="warningColor">#F57C00</color>
+    <color name="infoColor">#1976D2</color>
+</resources>
