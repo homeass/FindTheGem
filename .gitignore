@@ -1,0 +1,42 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Android
+android/findthegem-android/.gradle/
+android/findthegem-android/app/build/
+android/findthegem-android/local.properties
+android/findthegem-android/.idea/
+android/findthegem-android/*.iml
+android/findthegem-android/captures/
+android/findthegem-android/externalNativeBuild/
+android/findthegem-android/.cxx/
+
+# Mac Electron
+mac/findthegem-electron/node_modules/
+mac/findthegem-electron/dist/
+mac/findthegem-electron/out/
+mac/findthegem-electron/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs
+*.log

@@ -1,0 +1,89 @@
+{
+  "name": "findthegem",
+  "version": "1.0.0",
+  "description": "Find the Gem - AI Research Platform as a native Mac desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build:mac": "electron-builder --mac",
+    "build:dmg": "electron-builder --mac dmg",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Find the Gem Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.findthegem.app",
+    "productName": "Find the Gem",
+    "copyright": "Copyright © 2024 Find the Gem Team",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "loading.html",
+      "icon.icns"
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["arm64", "x64"]
+        }
+      ],
+      "category": "public.app-category.productivity",
+      "icon": "icon.icns",
+      "darkModeSupport": true,
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "entitlements.mac.plist",
+      "entitlementsInherit": "entitlements.mac.plist"
+    },
+    "dmg": {
+      "title": "Find the Gem",
+      "icon": "icon.icns",
+      "background": "dmg-background.png",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 130,
+          "y": 220,
+          "type": "file"
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "extraResources": [
+      {
+        "from": "../.venv",
+        "to": ".venv",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "../findthegem_app.py",
+        "to": "findthegem_app.py"
+      },
+      {
+        "from": "../requirements_findthegem.txt",
+        "to": "requirements_findthegem.txt"
+      }
+    ],
+    "asar": false,
+    "compression": "maximum"
+  }
+}
