@@ -1,0 +1,696 @@
+2026-07-17 16:30:37.355 Uvicorn server started on 127.0.0.1:8501
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8501
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:552 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m549 [0m                                                                               [31m [0m
+[31m [0m   [2m550 [0m                                                                               [31m [0m
+[31m [0m   [2m551 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m552 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m553 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:789 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:531 in <module>        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m528 [0m                                                                               [31m [0m
+[31m [0m   [2m529 [0m                                                                               [31m [0m
+[31m [0m   [2m530 [0m[94mif[0m [91m__name__[0m == [33m"[0m[33m__main__[0m[33m"[0m:                                                     [31m [0m
+[31m [0m [31m❱ [0m531 [2m│   [0m[1;4mmain()[0m                                                                     [31m [0m
+[31m [0m   [2m532 [0m                                                                               [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/home/findthegem/[0m[1mfindthegem_app.py[0m:390 in main            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m387 [0m[2m│   [0m                                                                           [31m [0m
+[31m [0m   [2m388 [0m[2m│   [0m[94mwith[0m col1:                                                                 [31m [0m
+[31m [0m   [2m389 [0m[2m│   │   [0mst.subheader([33m"[0m[33m🔍 Research Query[0m[33m"[0m)                                      [31m [0m
+[31m [0m [31m❱ [0m390 [2m│   │   [0m[94mwith[0m [1;4mst.form([0m[1;4;33m"[0m[1;4;33mresearch_form[0m[1;4;33m"[0m[1;4m, enter_submits=[0m[1;4;94mTrue[0m[1;4m)[0m:                     [31m [0m
+[31m [0m   [2m391 [0m[2m│   │   │   [0mquery = st.text_input(                                             [31m [0m
+[31m [0m   [2m392 [0m[2m│   │   │   │   [0m[33m"[0m[33mEnter your research question:[0m[33m"[0m,                               [31m [0m
+[31m [0m   [2m393 [0m[2m│   │   │   │   [0mplaceholder=[33m"[0m[33m例: What are the latest developments in AI agents[0m [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/data/data/com.termux/files/usr/lib/python3.14/site-packages/streamlit/runtime/[0m[1mmetri[0m [31m [0m
+[31m [0m [1mcs_util.py[0m:698 in wrapped_func                                                       [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mTypeError: [0m[1;35mFormMixin.form[0m[1m([0m[1m)[0m got an unexpected keyword argument [32m'enter_submits'[0m. Did you 
+mean [32m'enter_to_submit'[0m?

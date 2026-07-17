@@ -1,0 +1,380 @@
+=== FindTheGem setup started at Fri Jul 17 20:15:33 KST 2026 ===
+HOME=/data/data/com.termux/files/home
+WORKDIR=/data/data/com.termux/files/home/findthegem
+PWD=/data/data/com.termux/files/home/findthegem
+Files in WORKDIR:
+total 111
+drwx------.  2 u0_a668 u0_a668  3452 Jul 17 16:30 .
+drwx------. 34 u0_a668 u0_a668  3452 Jul 17 16:13 ..
+-rwx------.  1 u0_a668 u0_a668  1516 Jul 17 20:14 bootstrap.sh
+-rw-------.  1 u0_a668 u0_a668 17956 Jul 17 20:14 findthegem_app.py
+-rw-------.  1 u0_a668 u0_a668    53 Jul 17 20:14 requirements.txt
+-rw-------.  1 u0_a668 u0_a668 56628 Jul 17 18:30 server.log
+-rw-------.  1 u0_a668 u0_a668     6 Jul 17 16:30 server.pid
+-rw-------.  1 u0_a668 u0_a668   221 Jul 17 20:15 setup.log
+-rwx------.  1 u0_a668 u0_a668  1249 Jul 17 20:14 setup.sh
+-rwx------.  1 u0_a668 u0_a668  1182 Jul 17 20:14 start_server.sh
+-rwx------.  1 u0_a668 u0_a668   698 Jul 17 20:14 stop_server.sh
+Checking python3...
+Python found: /data/data/com.termux/files/usr/bin/python3
+Installing pip packages...
+ERROR: Installing pip is forbidden, this will break the python-pip package (termux).
+pip upgrade failed (non-fatal)
+Requirement already satisfied: streamlit>=1.30.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from -r requirements.txt (line 1)) (1.58.0)
+Collecting yt-dlp>=2024.1.0 (from -r requirements.txt (line 2))
+  Using cached yt_dlp-2026.7.4-py3-none-any.whl.metadata (183 kB)
+Collecting feedparser>=6.0.0 (from -r requirements.txt (line 3))
+  Using cached feedparser-6.0.12-py3-none-any.whl.metadata (2.7 kB)
+Requirement already satisfied: altair!=5.4.0,!=5.4.1,<7,>=4.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (6.2.2)
+Requirement already satisfied: blinker<2,>=1.5.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (1.9.0)
+Requirement already satisfied: cachetools<8,>=5.5 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (7.1.4)
+Requirement already satisfied: click<9,>=7.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (8.4.2)
+Requirement already satisfied: gitpython!=3.1.19,<4,>=3.0.7 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (3.1.50)
+Requirement already satisfied: numpy<3,>=1.23 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (1.26.4)
+Requirement already satisfied: packaging>=20 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (26.2)
+Requirement already satisfied: pandas<4,>=1.4.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (3.0.4)
+Requirement already satisfied: pillow<13,>=7.1.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (12.3.0)
+Requirement already satisfied: pydeck<1,>=0.8.0b4 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (0.9.3)
+Requirement already satisfied: protobuf<8,>=3.20 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (7.35.1)
+Requirement already satisfied: pyarrow>=7.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (24.0.0)
+Requirement already satisfied: requests<3,>=2.27 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (2.34.2)
+Requirement already satisfied: tenacity<10,>=8.1.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (9.1.4)
+Requirement already satisfied: toml<2,>=0.10.1 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (0.10.2)
+Requirement already satisfied: typing-extensions<5,>=4.10.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (4.16.0)
+Requirement already satisfied: starlette>=0.40.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: uvicorn>=0.30.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (0.50.0)
+Requirement already satisfied: httptools>=0.6.3 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (0.8.0)
+Requirement already satisfied: anyio>=4.0.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (4.14.1)
+Requirement already satisfied: python-multipart>=0.0.10 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (0.0.32)
+Requirement already satisfied: websockets>=12.0.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (16.0)
+Requirement already satisfied: itsdangerous>=2.1.2 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: watchdog<7,>=2.1.5 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from streamlit>=1.30.0->-r requirements.txt (line 1)) (6.0.0)
+Requirement already satisfied: jinja2 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit>=1.30.0->-r requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: jsonschema>=3.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit>=1.30.0->-r requirements.txt (line 1)) (4.26.0)
+Requirement already satisfied: narwhals>=2.4.0 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from altair!=5.4.0,!=5.4.1,<7,>=4.0->streamlit>=1.30.0->-r requirements.txt (line 1)) (2.23.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from gitpython!=3.1.19,<4,>=3.0.7->streamlit>=1.30.0->-r requirements.txt (line 1)) (4.0.12)
+Requirement already satisfied: smmap<6,>=3.0.1 in /data/data/com.termux/files/usr/lib/python3.14/site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.19,<4,>=3.0.7->streamlit>=1.30.0->-r requirements.txt (line 1)) (5.0.3)
+Collecting numpy<3,>=1.23 (from streamlit>=1.30.0->-r requirements.txt (line 1))
+  Using cached numpy-2.5.1.tar.gz (20.8 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [299 lines of output]
+      + /data/data/com.termux/files/usr/bin/python3.14 /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/vendored-meson/meson/meson.py setup /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69 /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/.mesonpy-x_a40xy2 -Dbuildtype=release -Db_ndebug=if-release -Db_vscrt=md --native-file=/data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/.mesonpy-x_a40xy2/meson-python-native-file.ini
+      The Meson build system
+      Version: 1.11.1
+      Source dir: /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69
+      Build dir: /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/.mesonpy-x_a40xy2
+      Build type: native build
+      Project name: NumPy
+      Project version: 2.5.1
+      C compiler for the host machine: cc (clang 21.1.8 "clang version 21.1.8")
+      C linker for the host machine: cc ld.lld 21.1.8
+      C++ compiler for the host machine: c++ (clang 21.1.8 "clang version 21.1.8")
+      C++ linker for the host machine: c++ ld.lld 21.1.8
+      Cython compiler for the host machine: cython (cython 3.2.8)
+      Host machine cpu family: aarch64
+      Host machine cpu: aarch64
+      Program python found: YES (/data/data/com.termux/files/usr/bin/python3.14)
+      Found pkg-config: YES (/data/data/com.termux/files/usr/bin/pkg-config) 0.29.2
+      Run-time dependency python found: YES 3.14
+      Has header "Python.h" with dependency python-3.14: YES
+      Compiler for C supports arguments -fno-strict-aliasing: YES
+      Compiler for C supports arguments -ftrapping-math: YES
+      Test features "NEON NEON_FP16 NEON_VFPV4 ASIMD" : Supported
+      Test features "ASIMDHP" : Supported
+      Test features "ASIMDDP" : Supported
+      Test features "ASIMDFHM" : Supported
+      Test features "SVE" : Supported
+      Configuring npy_cpu_dispatch_config.h using configuration
+      Message:
+      CPU Optimization Options
+        baseline:
+          Requested : min
+          Enabled   : NEON NEON_FP16 NEON_VFPV4 ASIMD
+        dispatch:
+          Requested : max
+          Enabled   : ASIMDHP ASIMDDP ASIMDFHM SVE
+      
+      Library m found: YES
+      Run-time dependency scipy-openblas found: NO  (tried pkg-config)
+      Run-time dependency openblas found: YES 0.3.33
+      Message: BLAS symbol suffix:
+      Run-time dependency openblas found: YES 0.3.33
+      Checking if "Check atomic builtins without -latomic" links: YES
+      Program _build_utils/process_src_template.py found: YES (/data/data/com.termux/files/usr/bin/python3.14 /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/numpy/_build_utils/process_src_template.py)
+      Program _build_utils/tempita.py found: YES (/data/data/com.termux/files/usr/bin/python3.14 /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/numpy/_build_utils/tempita.py)
+      Configuring __config__.py using configuration
+      DEPRECATION: Variable substitution with boolean value 'CROSS_COMPILED' is deprecated.
+      DEPRECATION: Variable substitution with boolean value 'BLAS_FOUND' is deprecated.
+      DEPRECATION: Variable substitution with boolean value 'LAPACK_FOUND' is deprecated.
+      Checking for size of "short" : 2
+      Checking for size of "int" : 4
+      Checking for size of "long" : 8
+      Checking for size of "long long" : 8
+      Checking for size of "float" : 4
+      Checking for size of "double" : 8
+      Checking for size of "long double" : 16
+      Checking for size of "size_t" : 8
+      Checking for size of "size_t" : 8 (cached)
+      Checking for size of "wchar_t" : 4
+      Checking for size of "off_t" : 8
+      Checking for size of "Py_intptr_t" with dependency python-3.14: 8
+      Checking for size of "PY_LONG_LONG" with dependency python-3.14: 8
+      Has header "complex.h" : YES
+      Checking for type "complex float" : YES
+      Checking for size of "complex float" : 8
+      Checking for type "complex double" : YES
+      Checking for size of "complex double" : 16
+      Checking for type "complex long double" : YES
+      Checking for size of "complex long double" : 32
+      Checking if "mandatory libm functions (batched)" with dependency -lm links: YES
+      Checking if "C99 complex funcs (batched)" with dependency -lm links: YES
+      Checking for function "isfinite" with dependency -lm: YES
+      Header "Python.h" has symbol "isfinite" with dependency python-3.14: YES
+      Checking for function "isinf" with dependency -lm: YES
+      Header "Python.h" has symbol "isinf" with dependency python-3.14: YES
+      Checking for function "isnan" with dependency -lm: YES
+      Header "Python.h" has symbol "isnan" with dependency python-3.14: YES
+      Checking for function "signbit" with dependency -lm: YES
+      Header "Python.h" has symbol "signbit" with dependency python-3.14: YES
+      Checking if "thread_local" compiles: NO
+      Checking if "_Thread_local" compiles: YES
+      Checking if "__thread" compiles: YES
+      Checking if "__declspec(thread)" compiles: NO
+      Checking for function "fallocate" : YES
+      Header "Python.h" has symbol "HAVE_FTELLO" with dependency python-3.14: YES
+      Header "Python.h" has symbol "HAVE_FSEEKO" with dependency python-3.14: YES
+      Checking for function "backtrace" : YES
+      Checking for function "madvise" : YES
+      Has header "features.h" : YES
+      Has header "xlocale.h" : YES
+      Has header "dlfcn.h" : YES
+      Has header "execinfo.h" : YES
+      Has header "libunwind.h" : YES
+      Has header "sys/mman.h" : YES
+      Checking for function "strtold_l" : YES
+      Checking if "__attribute__((optimize("unroll-loops")))" compiles: NO
+      Checking if "__attribute__((optimize("O3")))" compiles: NO
+      Checking if "__attribute__((nonnull(1)))" compiles: NO
+      Compiler for C supports arguments -O3: YES
+      Message: Long double format: IEEE_QUAD_LE
+      Has header "endian.h" : YES
+      Has header "sys/endian.h" : YES
+      Compiler for C supports function attribute visibility:hidden: YES
+      Configuring config.h using configuration
+      Configuring _numpyconfig.h using configuration
+      Configuring numpy.pc using configuration
+      Run-time dependency python found: YES 3.14
+      Generating multi-targets for "_umath_tests.dispatch.h"
+        Enabled targets: ASIMDHP, baseline
+      Generating multi-targets for "argfunc.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "x86_simd_argsort.dispatch.h"
+        Enabled targets:
+      Generating multi-targets for "x86_simd_qsort.dispatch.h"
+        Enabled targets:
+      Generating multi-targets for "x86_simd_qsort_16bit.dispatch.h"
+        Enabled targets:
+      Generating multi-targets for "highway_qsort.dispatch.h"
+        Enabled targets: ASIMD
+      Generating multi-targets for "highway_qsort_16bit.dispatch.h"
+        Enabled targets: ASIMDHP
+      Generating multi-targets for "loops_arithm_fp.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_arithmetic.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_comparison.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_exponent_log.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_hyperbolic.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_logical.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_minmax.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_modulo.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_trigonometric.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_umath_fp.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_unary.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_unary_fp.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_unary_fp_le.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_unary_complex.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_autovec.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "loops_half.dispatch.h"
+        Enabled targets: baseline
+      Generating multi-targets for "_simd.dispatch.h"
+        Enabled targets: baseline
+      Build targets in project: 65
+      
+      NumPy 2.5.1
+      
+        User defined options
+          Native files: /data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/.mesonpy-x_a40xy2/meson-python-native-file.ini
+          b_ndebug    : if-release
+          b_vscrt     : md
+          buildtype   : release
+      
+      Found ninja-1.13.2 at /data/data/com.termux/files/usr/bin/ninja
+      + /data/data/com.termux/files/usr/bin/ninja
+      [1/329] Copying file numpy/__init__.py
+      [2/329] Copying file numpy/__init__.cython-30.pxd
+      [3/329] Generating 'numpy/_core/libargfunc.dispatch.h_baseline.a.p/arraytypes.h'
+      [4/329] Generating 'numpy/_core/libnpymath.a.p/npy_math_complex.c'
+      [5/329] Generating 'numpy/_core/libargfunc.dispatch.h_baseline.a.p/npy_sort.h'
+      [6/329] Copying file numpy/__init__.pxd
+      [7/329] Generating 'numpy/_core/libnpymath.a.p/ieee754.c'
+      [8/329] Generating numpy/_core/__umath_generated with a custom command (wrapped by meson to set env)
+      [9/329] Generating numpy/_core/npy_math_internal.h with a custom command
+      [10/329] Generating 'numpy/_core/libhighway_qsort_16bit.dispatch.h_ASIMDHP.a.p/npy_sort.h'
+      [11/329] Generating 'numpy/_core/libloops_arithm_fp.dispatch.h_baseline.a.p/loops_utils.h'
+      [12/329] Generating 'numpy/_core/libhighway_qsort.dispatch.h_ASIMD.a.p/arraytypes.h'
+      [13/329] Generating 'numpy/_core/libloops_arithm_fp.dispatch.h_baseline.a.p/loops.h'
+      [14/329] Generating 'numpy/_core/libhighway_qsort.dispatch.h_ASIMD.a.p/npy_sort.h'
+      [15/329] Generating numpy/_core/__ufunc_api with a custom command (wrapped by meson to set env)
+      [16/329] Generating 'numpy/_core/libhighway_qsort_16bit.dispatch.h_ASIMDHP.a.p/arraytypes.h'
+      [17/329] Generating 'numpy/_core/libargfunc.dispatch.h_baseline.a.p/argfunc.dispatch.c'
+      [18/329] Generating 'numpy/_core/libloops_arithm_fp.dispatch.h_baseline.a.p/loops_arithm_fp.dispatch.c'
+      [19/329] Generating 'numpy/_core/libloops_arithmetic.dispatch.h_baseline.a.p/loops_arithmetic.dispatch.c'
+      [20/329] Generating 'numpy/_core/libloops_arithmetic.dispatch.h_baseline.a.p/loops_utils.h'
+      [21/329] Generating 'numpy/_core/libloops_arithmetic.dispatch.h_baseline.a.p/loops.h'
+      [22/329] Generating 'numpy/_core/libloops_exponent_log.dispatch.h_baseline.a.p/loops_exponent_log.dispatch.c'
+      [23/329] Generating 'numpy/_core/libloops_comparison.dispatch.h_baseline.a.p/loops.h'
+      [24/329] Generating 'numpy/_core/libloops_hyperbolic.dispatch.h_baseline.a.p/loops_utils.h'
+      [25/329] Generating 'numpy/_core/libloops_hyperbolic.dispatch.h_baseline.a.p/loops.h'
+      [26/329] Generating 'numpy/_core/libloops_comparison.dispatch.h_baseline.a.p/loops_utils.h'
+      [27/329] Generating 'numpy/_core/libloops_exponent_log.dispatch.h_baseline.a.p/loops_utils.h'
+      [28/329] Generating 'numpy/_core/libloops_comparison.dispatch.h_baseline.a.p/loops_comparison.dispatch.c'
+      [29/329] Generating 'numpy/_core/libloops_exponent_log.dispatch.h_baseline.a.p/loops.h'
+      [30/329] Generating numpy/_core/__multiarray_api with a custom command (wrapped by meson to set env)
+      [31/329] Generating 'numpy/_core/libloops_hyperbolic.dispatch.h_baseline.a.p/loops_hyperbolic.dispatch.cpp'
+      [32/329] Generating 'numpy/_core/libloops_logical.dispatch.h_baseline.a.p/loops_utils.h'
+      [33/329] Generating 'numpy/_core/libloops_logical.dispatch.h_baseline.a.p/loops.h'
+      [34/329] Generating 'numpy/_core/libloops_minmax.dispatch.h_baseline.a.p/loops.h'
+      [35/329] Generating 'numpy/_core/libloops_minmax.dispatch.h_baseline.a.p/loops_utils.h'
+      [36/329] Generating 'numpy/_core/libloops_modulo.dispatch.h_baseline.a.p/loops_utils.h'
+      [37/329] Generating 'numpy/_core/libloops_modulo.dispatch.h_baseline.a.p/loops.h'
+      [38/329] Generating 'numpy/_core/libloops_minmax.dispatch.h_baseline.a.p/loops_minmax.dispatch.c'
+      [39/329] Generating 'numpy/_core/libloops_modulo.dispatch.h_baseline.a.p/loops_modulo.dispatch.c'
+      [40/329] Generating 'numpy/_core/libloops_trigonometric.dispatch.h_baseline.a.p/loops_utils.h'
+      [41/329] Generating 'numpy/_core/libloops_umath_fp.dispatch.h_baseline.a.p/loops_umath_fp.dispatch.c'
+      [42/329] Generating 'numpy/_core/libloops_umath_fp.dispatch.h_baseline.a.p/loops.h'
+      [43/329] Generating 'numpy/_core/libloops_trigonometric.dispatch.h_baseline.a.p/loops.h'
+      [44/329] Generating 'numpy/_core/libloops_umath_fp.dispatch.h_baseline.a.p/loops_utils.h'
+      [45/329] Generating 'numpy/_core/libloops_unary.dispatch.h_baseline.a.p/loops_utils.h'
+      [46/329] Generating 'numpy/_core/libloops_unary.dispatch.h_baseline.a.p/loops.h'
+      [47/329] Generating 'numpy/_core/libloops_unary_fp_le.dispatch.h_baseline.a.p/loops_utils.h'
+      [48/329] Generating 'numpy/_core/libloops_unary_fp.dispatch.h_baseline.a.p/loops_utils.h'
+      [49/329] Generating 'numpy/_core/libloops_unary.dispatch.h_baseline.a.p/loops_unary.dispatch.c'
+      [50/329] Generating 'numpy/_core/libloops_unary_complex.dispatch.h_baseline.a.p/loops.h'
+      [51/329] Generating 'numpy/_core/libloops_unary_complex.dispatch.h_baseline.a.p/loops_utils.h'
+      [52/329] Generating 'numpy/_core/libloops_autovec.dispatch.h_baseline.a.p/loops.h'
+      [53/329] Generating 'numpy/_core/libloops_unary_fp.dispatch.h_baseline.a.p/loops.h'
+      [54/329] Generating 'numpy/_core/libloops_unary_fp_le.dispatch.h_baseline.a.p/loops_unary_fp_le.dispatch.c'
+      [55/329] Generating 'numpy/_core/libloops_unary_fp.dispatch.h_baseline.a.p/loops_unary_fp.dispatch.c'
+      [56/329] Generating 'numpy/_core/libloops_unary_fp_le.dispatch.h_baseline.a.p/loops.h'
+      [57/329] Generating 'numpy/_core/libloops_half.dispatch.h_baseline.a.p/loops.h'
+      [58/329] Generating 'numpy/_core/libloops_autovec.dispatch.h_baseline.a.p/loops_utils.h'
+      [59/329] Generating 'numpy/_core/libloops_autovec.dispatch.h_baseline.a.p/loops_autovec.dispatch.c'
+      [60/329] Generating 'numpy/_core/libloops_unary_complex.dispatch.h_baseline.a.p/loops_unary_complex.dispatch.c'
+      [61/329] Generating 'numpy/_core/libloops_half.dispatch.h_baseline.a.p/loops_half.dispatch.c'
+      [62/329] Generating 'numpy/_core/libloops_half.dispatch.h_baseline.a.p/loops_utils.h'
+      [63/329] Generating 'numpy/_core/lib_simd.dispatch.h_baseline.a.p/_simd_data.inc'
+      [64/329] Generating 'numpy/_core/lib_simd.dispatch.h_baseline.a.p/_simd_inc.h'
+      [65/329] Copying file numpy/random/__init__.pxd
+      [66/329] Generating 'numpy/_core/lib_simd.dispatch.h_baseline.a.p/_simd.dispatch.c'
+      [67/329] Copying file numpy/random/__init__.py
+      [68/329] Copying file numpy/random/_common.pxd
+      [69/329] Copying file numpy/random/bit_generator.pxd
+      [70/329] Copying file numpy/random/c_distributions.pxd
+      [71/329] Generating numpy/random/_bounded_integer_pxd with a custom command
+      [72/329] Copying file numpy/random/mtrand.pyx
+      [73/329] Generating numpy/random/_bounded_integer_pyx with a custom command
+      [74/329] Copying file numpy/random/_generator.pyx
+      [75/329] Generating numpy/_core/_umath_doc_generated with a custom command (wrapped by meson to set env)
+      [76/329] Generating 'numpy/_core/_multiarray_tests.cpython-314-aarch64-linux-android.so.p/templ_common.h'
+      [77/329] Generating 'numpy/_core/_multiarray_tests.cpython-314-aarch64-linux-android.so.p/_multiarray_tests.c'
+      [78/329] Generating 'numpy/_core/_umath_tests.cpython-314-aarch64-linux-android.so.p/_umath_tests.c'
+      [79/329] Compiling C object numpy/_core/lib_umath_tests.dispatch.h_baseline.a.p/src_umath__umath_tests.dispatch.c.o
+      [80/329] Compiling C object numpy/_core/libnpymath.a.p/meson-generated_npy_math_complex.c.o
+      FAILED: [code=1] numpy/_core/libnpymath.a.p/meson-generated_npy_math_complex.c.o
+      cc -Inumpy/_core/libnpymath.a.p -Inumpy/_core -I../numpy/_core -Inumpy/_core/include -I../numpy/_core/include -I../numpy/_core/src/npymath -I../numpy/_core/src/common -I/data/data/com.termux/files/usr/include/python3.14 -I/data/data/com.termux/files/usr/tmp/pip-install-l_v9x3az/numpy_8b062ccefcda4a21913379f93f5c2b69/.mesonpy-x_a40xy2/meson_cpu -fvisibility=hidden -fdiagnostics-color=always -DNDEBUG -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=c11 -O3 -fno-strict-aliasing -ftrapping-math -DNPY_HAVE_CLANG_FPSTRICT -DNPY_HAVE_NEON_VFPV4 -DNPY_HAVE_NEON_FP16 -DNPY_HAVE_NEON -DNPY_HAVE_ASIMD -fPIC -MD -MQ numpy/_core/libnpymath.a.p/meson-generated_npy_math_complex.c.o -MF numpy/_core/libnpymath.a.p/meson-generated_npy_math_complex.c.o.d -o numpy/_core/libnpymath.a.p/meson-generated_npy_math_complex.c.o -c numpy/_core/libnpymath.a.p/npy_math_complex.c
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:432:12: error: call to undeclared library function 'cpowf' with type '_Complex float (_Complex float, _Complex float)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        432 |     return cpowf(x, y);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:432:12: note: include the header <complex.h> or explicitly provide a declaration for 'cpowf'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:432:12: error: call to undeclared library function 'cpow' with type '_Complex double (_Complex double, _Complex double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        432 |     return cpow(x, y);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:432:12: note: include the header <complex.h> or explicitly provide a declaration for 'cpow'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:432:12: error: call to undeclared library function 'cpowl' with type '_Complex long double (_Complex long double, _Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+        432 |     return cpowl(x, y);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:432:12: note: include the header <complex.h> or explicitly provide a declaration for 'cpowl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'cexpl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return cexpl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'cexpl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'ccosl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return ccosl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'ccosl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'csinl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return csinl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'csinl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'ctanl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return ctanl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'ctanl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'ccoshl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return ccoshl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'ccoshl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'csinhl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return csinhl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'csinhl'
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: error: call to undeclared library function 'ctanhl' with type '_Complex long double (_Complex long double)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+       1775 |     return ctanhl(z);
+            |            ^
+      ../numpy/_core/src/npymath/npy_math_complex.c.src:1775:12: note: include the header <complex.h> or explicitly provide a declaration for 'ctanhl'
+      10 errors generated.
+      [81/329] Compiling C object numpy/_core/lib_umath_tests.dispatch.h_ASIMDHP.a.p/src_umath__umath_tests.dispatch.c.o
+      [82/329] Compiling C object numpy/_core/libnpymath.a.p/meson-generated_ieee754.c.o
+      [83/329] Compiling C object numpy/_core/libnpymath.a.p/src_npymath_npy_math.c.o
+      [84/329] Compiling C++ object numpy/_core/libhighway.a.p/src_highway_hwy_abort.cc.o
+      [85/329] Compiling C object numpy/_core/libloops_arithm_fp.dispatch.h_baseline.a.p/meson-generated_loops_arithm_fp.dispatch.c.o
+      [86/329] Compiling C++ object numpy/_core/libnpymath.a.p/src_npymath_halffloat.cpp.o
+      [87/329] Compiling C object numpy/_core/libargfunc.dispatch.h_baseline.a.p/meson-generated_argfunc.dispatch.c.o
+      [88/329] Compiling C++ object numpy/_core/libhighway_qsort_16bit.dispatch.h_ASIMDHP.a.p/src_npysort_highway_qsort_16bit.dispatch.cpp.o
+      [89/329] Compiling C++ object numpy/_core/libhighway_qsort.dispatch.h_ASIMD.a.p/src_npysort_highway_qsort.dispatch.cpp.o
+      ninja: build stopped: subcommand failed.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> numpy
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+pip install failed (non-fatal)
+=== Setup complete at Fri Jul 17 20:15:55 KST 2026 ===
